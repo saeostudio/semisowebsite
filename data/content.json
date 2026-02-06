@@ -1,0 +1,45 @@
+{
+  "home": {
+    "streamLink": "https://play.mw.fm/the-pear-tree",
+    "buyLink": "https://elasticstage.com/semiso/releases/the-pear-tree-album",
+    "latestReleaseTitle": "The Pear Tree"
+  },
+  "about": {
+    "bio": "I am a multidisciplinary artist exploring the boundaries of sound and visual art. My work is a collage of digital and analog textures, creating a maximalist experience that challenges the senses.",
+    "image": "/placeholder-artist.jpg"
+  },
+  "discography": [
+    {
+      "title": "The Pear Tree",
+      "slug": "the-pear-tree",
+      "year": "2023",
+      "cover": "/covers/pear-tree.jpg",
+      "description": "An exploration of organic sounds in a digital landscape. The Pear Tree represents growth, decay, and the sweetness of the fruit born from hard earth.",
+      "streamLink": "https://play.mw.fm/the-pear-tree",
+      "buyLink": "https://elasticstage.com/semiso/releases/the-pear-tree-album"
+    },
+    {
+      "title": "Digital Fragments",
+      "slug": "digital-fragments",
+      "year": "2022",
+      "cover": "/covers/fragments.jpg",
+      "description": "A collection of b-sides and rarities found on old hard drives.",
+      "streamLink": "https://example.com/stream",
+      "buyLink": "https://example.com/buy"
+    }
+  ],
+  "tour": [
+    {
+      "date": "2023-11-15",
+      "venue": "The Blue Room",
+      "city": "London, UK",
+      "ticketLink": "https://example.com/tickets"
+    },
+    {
+      "date": "2023-11-20",
+      "venue": "Echo Base",
+      "city": "Berlin, DE",
+      "ticketLink": "https://example.com/tickets"
+    }
+  ]
+}
