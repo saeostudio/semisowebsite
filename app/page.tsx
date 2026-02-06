@@ -6,7 +6,8 @@ import content from '@/data/content.json';
 import { Disc, ShoppingBag } from 'lucide-react';
 
 export default function Home() {
-  const { home } = content;
+  const { home, discography } = content;
+  const latestAlbum = discography.find(a => a.title === home.latestReleaseTitle) || discography[0];
 
   return (
     <div className="w-full h-full p-4 relative overflow-hidden">
@@ -72,9 +73,8 @@ export default function Home() {
                  <p className="text-sm text-gray-500">In Stock</p>
               </div>
            </div>
-           <p className="text-sm leading-relaxed font-serif italic text-gray-600">
-             &quot;A maximalist experience that challenges the senses.&quot; <br/>
-             Includes limited edition poster and stickers.
+           <p className="text-sm leading-relaxed font-serif text-gray-600">
+             {latestAlbum?.description}
            </p>
            <Button href={home.buyLink} external className="justify-center py-3 text-sm">
              <ShoppingBag size={16} /> Buy Physical
