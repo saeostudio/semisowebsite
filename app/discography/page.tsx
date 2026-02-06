@@ -8,22 +8,27 @@ import { Disc } from 'lucide-react';
 export default function DiscographyPage() {
     return (
         <div className="w-full h-full p-4">
-             <DraggableWindow title="Discography" defaultPosition={{ x: 50, y: 50 }} width={800} className="h-[600px]">
-                <div className="bg-[#f0f0f0] border-b border-gray-300 px-2 py-1 flex items-center gap-2 mb-0">
-                    <span className="text-xs text-gray-500">{content.discography.length} items</span>
+             <DraggableWindow title="Discography" defaultPosition={{ x: 50, y: 50 }} width={900} className="h-[700px]">
+                <div className="bg-[#f0f0f0] border-b border-gray-300 px-3 py-2 flex items-center gap-2 mb-0">
+                    <span className="text-sm text-gray-500 font-bold">{content.discography.length} items</span>
                 </div>
-                <div className="bg-white p-6 min-h-[400px]">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div className="bg-white p-8 min-h-[500px] overflow-y-auto">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
                         {content.discography.map((album) => (
-                            <Link href={`/discography/${album.slug}`} key={album.slug} className="group flex flex-col items-center gap-3">
-                                <div className="w-full aspect-square bg-gray-200 border border-gray-400 shadow-lg flex items-center justify-center group-hover:ring-4 ring-blue-200 transition-all relative">
-                                     {/* Placeholder cover art logic */}
-                                     <div className="absolute inset-0 bg-gradient-to-tr from-gray-300 to-white opacity-20"></div>
-                                     <Disc className="text-gray-400 w-1/2 h-1/2" />
+                            <Link href={`/discography/${album.slug}`} key={album.slug} className="group flex flex-col items-center gap-4">
+                                <div className="w-full aspect-square bg-gray-200 border border-gray-400 shadow-xl flex items-center justify-center group-hover:ring-4 ring-blue-200 transition-all relative overflow-hidden">
+                                     {album.cover ? (
+                                         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${album.cover})` }}></div>
+                                     ) : (
+                                        <>
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-gray-300 to-white opacity-20"></div>
+                                            <Disc className="text-gray-400 w-1/2 h-1/2" />
+                                        </>
+                                     )}
                                 </div>
                                 <div className="text-center w-full">
-                                    <span className="font-bold text-sm block truncate w-full group-hover:bg-blue-600 group-hover:text-white rounded px-1">{album.title}</span>
-                                    <span className="text-xs text-gray-500">{album.year}</span>
+                                    <span className="font-bold text-base block truncate w-full group-hover:bg-blue-600 group-hover:text-white rounded px-1 transition-colors">{album.title}</span>
+                                    <span className="text-sm text-gray-500 font-mono">{album.year}</span>
                                 </div>
                             </Link>
                         ))}
