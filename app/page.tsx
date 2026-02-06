@@ -27,7 +27,7 @@ export default function Home() {
       <DraggableWindow
         title="Music Player"
         defaultPosition={{ x: 100, y: 80 }}
-        width={450}
+        width={350}
       >
         <div className="flex flex-col items-center gap-4 p-4 bg-[#f8f8f8]">
           <div className="w-full aspect-square bg-gradient-to-br from-gray-200 to-gray-400 border border-gray-500 flex items-center justify-center shadow-inner relative overflow-hidden">
@@ -68,12 +68,12 @@ export default function Home() {
                  <div className="w-6 h-6 bg-white rounded-full"></div>
               </div>
               <div>
-                 <h3 className="font-bold text-base">Vinyl LP</h3>
+                 <h3 className="font-bold text-base">Vinyl LP & CD</h3>
                  <p className="text-sm text-gray-500">In Stock</p>
               </div>
            </div>
            <p className="text-sm leading-relaxed font-serif italic text-gray-600">
-             "A maximalist experience that challenges the senses." <br/>
+             &quot;A maximalist experience that challenges the senses.&quot; <br/>
              Includes limited edition poster and stickers.
            </p>
            <Button href={home.buyLink} external className="justify-center py-3 text-sm">

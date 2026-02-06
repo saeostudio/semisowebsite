@@ -6,7 +6,7 @@
   },
   "about": {
     "bio": "Semiso is an Amsterdam-based experimental/electronic artist. He started off his music career producing for smaller artists, but finally debuted with his own single “a_01” on August 31st 2024. Almost a year later, on July 25th 2025, his debut EP “THE PEAR TREE” was released.",
-    "image": "/semiso.jpg"
+    "image": "/about.jpg"
   },
   "discography": [
     {
@@ -14,18 +14,9 @@
       "slug": "the-pear-tree",
       "year": "2025",
       "cover": "/covers/the-pear-tree.jpg",
-      "description": "An exploration of organic sounds in a digital landscape. The Pear Tree represents growth, decay, and the sweetness of the fruit born from hard earth.",
+      "description": "The Pear Tree is about facing a big happening in life that feels like it breaks everything. It explores the variable stages of acceptance and everything in between. It was recorded between August 2024 and July 2025.",
       "streamLink": "https://play.mw.fm/the-pear-tree",
       "buyLink": "https://elasticstage.com/semiso/releases/the-pear-tree-album"
-    },
-    {
-      "title": "Digital Fragments",
-      "slug": "digital-fragments",
-      "year": "2022",
-      "cover": "/covers/fragments.jpg",
-      "description": "A collection of b-sides and rarities found on old hard drives.",
-      "streamLink": "https://example.com/stream",
-      "buyLink": "https://example.com/buy"
     }
   ],
   "tour": []
