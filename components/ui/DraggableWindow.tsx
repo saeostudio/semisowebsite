@@ -30,7 +30,7 @@ export function DraggableWindow({ title, children, defaultPosition = { x: 0, y: 
     return (
         <div
         className={cn(
-          "absolute flex flex-col bg-[#e8e8e8] border-t-2 border-l-2 border-white border-b-2 border-r-2 border-[#808080] shadow-[4px_4px_0px_rgba(0,0,0,0.2)] z-10",
+          "absolute flex flex-col bg-[#e8e8e8] border-t-2 border-l-2 border-white border-b-2 border-r-2 border-[#808080] shadow-[4px_4px_0px_rgba(0,0,0,0.2)] z-10 rounded-lg overflow-hidden",
           className
         )}
         style={{ width, left: defaultPosition.x, top: defaultPosition.y }}
@@ -55,7 +55,7 @@ export function DraggableWindow({ title, children, defaultPosition = { x: 0, y: 
       <div
         ref={nodeRef}
         className={cn(
-          "absolute flex flex-col bg-[#e8e8e8] border-t-2 border-l-2 border-white border-b-2 border-r-2 border-[#808080] shadow-[4px_4px_0px_rgba(0,0,0,0.2)] z-10",
+          "absolute flex flex-col bg-[#e8e8e8] border-t-2 border-l-2 border-white border-b-2 border-r-2 border-[#808080] shadow-[4px_4px_0px_rgba(0,0,0,0.2)] z-10 rounded-lg overflow-hidden",
           className
         )}
         style={{ width }}
